@@ -6,6 +6,7 @@ This is a docker image based on Alpine Linux for [Crafty Controller](https://hub
 
 You can pull this image either from [Docker hub](https://hub.docker.com/r/stevelonny/crafty-alpine) or [Github Packages](https://ghcr.io/stevelonny/crafty-alpine:latest) by using `docker compose` or `docker run`. You can also build your image by cloning this [Dockerfile](./Dockerfile).
 
+_Instead of installing OpenJDK Java runtimes, this image uses [Adoptium](https://adoptium.net/) Temurin JRE. Beware that automated path recognition of JREs in Crafty could brake, and must resort to manually specify the paths._
 
 ### docker-compose.yml
 ``` yml
