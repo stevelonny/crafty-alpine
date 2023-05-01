@@ -22,6 +22,7 @@ jobs:
   push_to_registries:
     name: Push Docker image to multiple registries
     runs-on: self-hosted
+    needs: delete_old_packages
     permissions:
       packages: write
       contents: read
